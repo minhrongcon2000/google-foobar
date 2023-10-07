@@ -37,3 +37,18 @@ Tracing the probabilities of each, we find that
 So, putting that together, and making a common denominator, gives an answer in the form of [s2.numerator, s3.numerator, s4.numerator, s5.numerator, denominator] which is [0, 3, 2, 9, 14].
 
 (I forgot to copy the test cases, but the problem should be clarified enough!)
+
+<details>
+    <summary>Hint 1</summary>
+    This is Markov chain.
+</details>
+
+<details>
+    <summary>Hint 2</summary>
+    You are allowed to google, this is absorbing markov chain, so the solution is fairly complex.
+</details>
+
+<details>
+    <summary>Solution</summary>
+    This problem is a typical absorbing markov chain problem. If you have math knowledge before, or do a little bit of Google search on this keyword, it shold give you a solution resembling [here](https://brilliant.org/wiki/absorbing-markov-chains/). I think the most difficult part is to calculate the inverse matrix accurately up to fractional level. In Linear Algebra, the formula for calculating inverse matrix analytically is mentioned [here](https://en.wikipedia.org/wiki/Invertible_matrix#Methods_of_matrix_inversion).
+</details>

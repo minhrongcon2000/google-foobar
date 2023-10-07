@@ -78,6 +78,5 @@ Output:
 
 <details>
     <summary>Solution</summary>
-    Let s be the sum of all elements in the given set modulo 3 and m be a hashmap capturing the number of elements by its modulo 3.
-    Then the solution is self-explanatory.
+    Let s be the sum of all elements modulo 3. What we could do is to count the frequency of each digit from 0 to 9. If s mod 3 = 0, then the entire set is the longest set. If s mod 3 = 1, then we just need to decrease the frequency of digits 1, 4, 7 by 1 and form the largest number from there. If these frequencies are 0, then we decreases the frequency of 2, 5, 8 by 2. The other case is similar
 </details>

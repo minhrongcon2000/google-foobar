@@ -91,3 +91,18 @@ Output:
 ```bash
 16
 ```
+
+<details>
+    <summary>Hint 1</summary>
+    This is a maximum flow problems.
+</details>
+
+<details>
+    <summary>Hint 2</summary>
+    Since this is a multisource and multisink problems, we can convert to a single source single sink problem by introducing a supersource and a supersink with infinite capacity
+</details>
+
+<details>
+    <summary>Solution</summary>
+    This is a maximum flow problems, since you're allowed to use Google for this, it is possible that you will stumble upon this <a href="https://en.wikipedia.org/wiki/Ford–Fulkerson_algorithm">wiki</a>. However, since this is only for single source single sink, so we need to introduce a supersource and supersink as in hint 2 for this algorithm to be applicable.
+</details>

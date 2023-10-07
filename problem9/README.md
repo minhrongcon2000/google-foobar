@@ -82,3 +82,9 @@ Output:
 ```bash
 4208
 ```
+
+<details>
+    <summary>Solution</summary>
+    Let n' = [(sqrt(2) - 1) * n]. 
+    s(n) = n * n' + n * (n + 1) / 2 - n' * (n' + 1) / 2 - S(n')
+</details>

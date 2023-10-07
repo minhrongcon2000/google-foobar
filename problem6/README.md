@@ -102,3 +102,23 @@ Output:
 ```bash
 1
 ```
+
+<details>
+    <summary>Hint 1</summary>
+    This is a problem of finding the number of ways to split a number into sums of other numbers.
+</details>
+
+<details>
+    <summary>Hint 2</summary>
+    Let's look at it in another way. Since all operands in the addition should be smaller than the input itself, this problem could be seen as finding the number of subsets whose sum is equal to input number
+</details>
+
+<details>
+    <summary>Solution</summary>
+    Let s[i, j] is the number of subsets from the set {1, 2, 3, ..., i} whose sum is j. We could see that if we add i + 1 to the set {1, 2, ..., i}, you can do 2 things:
+    <ul>
+        <li>If i + 1 >= j, then the required subset remains the same (s[i + 1, j] = s[i, j])</li>
+        <li>If i + 1 <= j, then the required subset is s[i + 1, j] = s[i, j] + s[i, j - i - 1]</li>
+    </ul>
+    Then, we can just apply dynamic programming to find out the solution.
+</details>

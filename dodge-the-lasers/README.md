@@ -85,6 +85,9 @@ Output:
 
 <details>
     <summary>Solution</summary>
-    Let n' = [(sqrt(2) - 1) * n]. 
-    s(n) = n * n' + n * (n + 1) / 2 - n' * (n' + 1) / 2 - S(n')
+
+Let $n' = \lfloor(\sqrt{2} - 1)n\rfloor$.
+$s(n) = n\times n' + \dfrac{n\times (n + 1)}{2} - \dfrac{n'\times (n' + 1)}{2} - s(n')$
+
+Time complexity: $O(\log_{\sqrt{2} - 1}N)$
 </details>

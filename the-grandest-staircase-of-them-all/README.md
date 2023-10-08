@@ -115,10 +115,11 @@ Output:
 
 <details>
     <summary>Solution</summary>
-    Let s[i, j] is the number of subsets from the set {1, 2, 3, ..., i} whose sum is j. We could see that if we add i + 1 to the set {1, 2, ..., i}, you can do 2 things:
-    <ul>
-        <li>If i + 1 >= j, then the required subset remains the same (s[i + 1, j] = s[i, j])</li>
-        <li>If i + 1 <= j, then the required subset is s[i + 1, j] = s[i, j] + s[i, j - i - 1]</li>
-    </ul>
-    Then, we can just apply dynamic programming to find out the solution.
+
+Let s[i, j] is the number of subsets from the set {1, 2, 3, ..., i} whose sum is j. We could see that if we add i + 1 to the set {1, 2, ..., i}, you can do 2 things:
+
+- If i + 1 >= j, then the required subset remains the same (s[i + 1, j] = s[i, j])
+- If i + 1 <= j, then the required subset is s[i + 1, j] = s[i, j] + s[i, j - i - 1]
+
+Then, we can just apply dynamic programming to find out the solution.
 </details>

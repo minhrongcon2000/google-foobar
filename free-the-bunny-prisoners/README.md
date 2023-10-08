@@ -123,3 +123,18 @@ Output:
 ```python
 [[0], [1], [2], [3]]
 ```
+
+<details>
+  <summary>Hint</summary>
+
+Let's reverse the problem. What is the minimum number of copies of each key should we make to satisfy the scheme?
+</details>
+
+<details>
+  <summary>Solution</summary>
+
+Let's reverse the problem. If you choose `num_required - 1` bunnies already, then the union of all keys among those bunnies $\{0, ..., K\}\setminus\{i\}$ where $K$ is the minimum number of keys and $i$ is the missing keys that could be filled by any of `num_buns - num_required + 1` remaining bunnies. That mean for each key, there should be at least `num_buns - num_required + 1` bunnies keeping it. As a result, the problem becomes how to generate all combinations of `num_buns - num_required + 1` bunnies out of `num_buns` bunnies in a dictionary order and distribute keys to those bunnies.
+
+Space complexity: $O(num\_buns\times {num\_buns-1\choose num\_required - 1})$ (since you need to store the number of bunnies with their corresponding keys)
+Time complexity: $O((num\_buns - num\_required + 1)\times {num\_buns\choose num\_buns - num\_required + 1})$
+</details>

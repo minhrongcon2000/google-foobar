@@ -68,15 +68,21 @@ Output:
 
 <details>
     <summary>Hint 1</summary>
-    Basically this means find the longest subsequence whose sum is divisible by 3
+
+Basically this means find the longest subsequence whose sum is divisible by 3
 </details>
 
 <details>
     <summary>Hint 2</summary>
-    Reverse hint 1, find the minimum number of elements whose removal results in a set with sum divisible by 3
+
+Reverse hint 1, find the minimum number of elements whose removal results in a set with sum divisible by 3
 </details>
 
 <details>
     <summary>Solution</summary>
-    Let s be the sum of all elements modulo 3. What we could do is to count the frequency of each digit from 0 to 9. If s mod 3 = 0, then the entire set is the longest set. If s mod 3 = 1, then we just need to decrease the frequency of digits 1, 4, 7 by 1 and form the largest number from there. If these frequencies are 0, then we decreases the frequency of 2, 5, 8 by 2. The other case is similar
+
+Let $s$ be the sum of all elements modulo 3. What we could do is to count the frequency of each digit from 0 to 9. If s mod 3 = 0, then the entire set is the longest subset. If s mod 3 = 1, then we just need to decrease the frequency of digits 1, 4, 7 by 1 and form the largest number from there. If these frequencies are 0 from the beginning, then we decreases the frequency of 2, 5, 8 by 2. The other case is similar. Remember to decrease the frequency in an increasing order (that is, we decrease 1 first, if needed then decrease 4 and finally 7, other cases are similar).
+
+Space complexity: $O(1)$ (Since you only need to store digit's frequency)
+Time complexity: $O(1)$ (Since you only need to loop through digit frequency list)
 </details>

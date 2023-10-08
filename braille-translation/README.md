@@ -110,18 +110,21 @@ Output:
 
 <details>
     <summary>Hint 1</summary>
-    You are allowed to use google :D. Why not use Google to search what braille character looks like :D.
+
+You are allowed to use google :D. Why not use Google to search what braille character looks like :D.
 </details>
 
 <details>
     <summary>Hint 2</summary>
-    You could make a list to store every characters with their corresponding binary representation. But what about storing the position of 1s only?
+
+You could make a list to store every characters with their corresponding binary representation. But what about storing the position of 1s only?
 </details>
 
 <details>
     <summary>Solution</summary>
-    Google's problem assumes that each Alphabet character is mapped to only one Braille character, so the easiest way is to use a hashmap to store all of this relationship. Furthermore, to save memory, instead of storing exact representation, we just store the position of 1s. For capital character, remember to prepend it with 000001.
 
-    Time complexity: O(n)
-    Space complexity: O(1) since the number of characters is predefined.
+Google's problem assumes that each Alphabet character is mapped to only one Braille character, so the easiest way is to use a hashmap to store all of this relationship. Furthermore, to save memory, instead of storing exact representation, we just store the position of 1s. For capital character, remember to prepend it with 000001.
+
+Space complexity: $O(1)$ (since we have finite characters)
+Time complexity: $O(n)$
 </details>

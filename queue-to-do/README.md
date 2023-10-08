@@ -103,5 +103,9 @@ Output:
 
 <details>
     <summary>Solution</summary>
-    Let's simplify the problem by assuming that worker ID starts with 1 and ends with some n with queue length L. The problem essential means calculating the xor of each queue but in triangular fashion (queue 1 remains the same, while queue 2 leaves 1 out, queue 3 leaves 2 out and so on). Hence, the solution comes down to how to calculate i^(i + 1)^(i + 2)^...^j efficiently. If you take notice from hint 2 already, 1^2^3^...^n is n if n mod 4 = 0, is 1 if n mod 4 = 1, is n + 1 if n mod 4 = 2, and is 0 otherwise. Combining with hint 1, the solution for the XOR in question is s(i - 1)^s(j). Thus, we just need a for loop and calculate the xor for each queue in a triangular fashion and we have our solution.
+
+Let's simplify the problem by assuming that worker ID starts with 1 and ends with some n with queue length L. The problem means calculating the xor of each queue but in triangular fashion (queue 1 remains the same, while queue 2 leaves 1 out, queue 3 leaves 2 out and so on). Hence, the solution comes down to how to calculate i^(i + 1)^(i + 2)^...^j efficiently. If you take notice from hint 2 already, 1^2^3^...^n is n if n mod 4 = 0, is 1 if n mod 4 = 1, is n + 1 if n mod 4 = 2, and is 0 otherwise. Combining with hint 1, i^(i + 1)^(i + 2)^...^j = s(i - 1)^s(j). Thus, we just need a for loop and calculate the xor for each queue in a triangular fashion and we have our solution.
+
+Space complexity: $O(1)$
+Time complexity: $O(length)$, where $length$ is the length of the queue
 </details>

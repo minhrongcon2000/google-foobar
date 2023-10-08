@@ -50,5 +50,9 @@ So, putting that together, and making a common denominator, gives an answer in t
 
 <details>
     <summary>Solution</summary>
-    This problem is a typical absorbing markov chain problem. If you have math knowledge before, or do a little bit of Google search on this keyword, it shold give you a solution resembling <a href="https://brilliant.org/wiki/absorbing-markov-chains/">here</a>. I think the most difficult part is to calculate the inverse matrix accurately up to fractional level. In Linear Algebra, the formula for calculating inverse matrix analytically is mentioned <a href="https://en.wikipedia.org/wiki/Invertible_matrix#Methods_of_matrix_inversion">here</a>.
+
+This problem is a typical absorbing markov chain problem. If you have math knowledge before, or do a little bit of Google search on this keyword, it shold give you a solution resembling [here](https://brilliant.org/wiki/absorbing-markov-chains/). I think the most difficult part is to calculate the inverse matrix accurately up to fractional level. In Linear Algebra, the formula for calculating inverse matrix analytically is mentioned [here](https://en.wikipedia.org/wiki/Invertible_matrix#Methods_of_matrix_inversion)
+
+Space complexity: $O(N^2)$
+Time complexity: $O(N^3)$, for calculating inverse matrix
 </details>

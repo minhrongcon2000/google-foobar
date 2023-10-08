@@ -104,5 +104,9 @@ Output:
 
 <details>
     <summary>Solution</summary>
-    This is a maximum flow problems, since you're allowed to use Google for this, it is possible that you will stumble upon this <a href="https://en.wikipedia.org/wiki/Ford–Fulkerson_algorithm">wiki</a>. However, since this is only for single source single sink, so we need to introduce a supersource and supersink as in hint 2 for this algorithm to be applicable.
+
+This is a maximum flow problems, since you're allowed to use Google for this, it is possible that you will stumble upon this [wiki](https://en.wikipedia.org/wiki/Ford–Fulkerson_algorithm). However, since this is only for single source single sink, so we need to introduce a supersource and supersink as in hint 2 for this algorithm to be applicable.
+
+Time complexity: $O(E\times R^3)$ where R is the number of rooms and E is the number corridors connecting two rooms
+Space complexity: $O(R^2)$ where R is the number of rooms
 </details>

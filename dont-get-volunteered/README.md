@@ -88,18 +88,21 @@ Output:
 
 <details>
     <summary>Hint 1</summary>
-    Knight move can form a graph data structure. Your job is to find the shortest path between 2 nodes.
+    
+Knight move can form a graph data structure. Your job is to find the shortest path between 2 nodes.
 </details>
 
 <details>
     <summary>Hint 2</summary>
-    Should you use DFS or should you use BFS?
+
+Should you use DFS or should you use BFS?
 </details>
 
 <details>
     <summary>Solution</summary>
-    This is the famous problem `Knight's Tour`. The only difference is that you need to find the shortest path between 2 nodes instead of finding Halmington path, So you need to traverse the knight's movement graph, but which method to traverse? DFS is very likely to take the longest path while BFS is likely to take the shortest path. Hence, you need to implement DFS to traverse knight's movement graph.
 
-    Time complexity: O(1) (since the chessboard size is known; otherwise, it would be O(n^2))
-    Space complexity: O(1) (same reason as above, O(n^2) when chessboard is unknown) 
+This is the famous problem `Knight's Tour`. The only difference is that you need to find the shortest path between 2 nodes instead of finding Halmington path, So you need to traverse the knight's movement graph, but which method to traverse? DFS is very likely to take the longest path while BFS is likely to take the shortest path. Hence, you need to implement DFS to traverse knight's movement graph.
+
+Space complexity: $O(N^2)$ (the reason is that in worst case, you do need to store all cells in a queue to keep track of visit record)
+Time complexity: $O(N^2)$ (in worst case, you might need to traverse the entire board)
 </details>
